@@ -25,6 +25,14 @@ app.put(`/products/:id`, update_application);
   
 app.delete("/products/:id" ,deleteproducts);
 
+app.get("/",(request , response) =>{
+    response.json({
+        Status : true,
+        Message : "Hi There Welcome to Server.....Developed by : TEJA NAYAK",
+        server : "products server was running......."
+    })
+})
+
 app.listen(port ,  () => {
     console.log("sever is running...............")
 });
