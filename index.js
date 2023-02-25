@@ -29,7 +29,12 @@ app.get("/",(request , response) =>{
     response.json({
         Status : true,
         Message : "Hi There Welcome to Server.....Developed by : TEJA NAYAK",
-        server : "products server was running......."
+        server : "products server was running.......",
+        products : "want to See the products https://new-application-53bq.onrender.com/products",
+        products : "here products_ID is https://new-application-53bq.onrender.com/products/urs id as 1 to 5",
+        message : "Thank you please visit again........",
+        Author : "TEJA NAYAK......"
+
     })
 })
 
