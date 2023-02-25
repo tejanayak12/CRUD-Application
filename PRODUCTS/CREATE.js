@@ -1,4 +1,7 @@
+const { request, response } = require("express");
 const db = require("../db.js");
+
+// creating an insert query...............
 
 const INSERT_new_application = (request , response) => {
     const application_data = request.body;
@@ -41,7 +44,8 @@ const INSERT_new_application = (request , response) => {
             }
         })
     })
-}
+};
+
 
 module.exports = INSERT_new_application;
 
@@ -51,4 +55,3 @@ const erromessage = (response , erromessage) => {
         error : erromessage
     });
 }
-  

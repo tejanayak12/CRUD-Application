@@ -25,14 +25,6 @@ app.put(`/products/:id`, update_application);
   
 app.delete("/products/:id" ,deleteproducts);
 
-app.get("/" , (request , response) => {
-    response.json({
-        status : true,
-        api : [products]
-    })
-});
-
-
 app.listen(port ,  () => {
     console.log("sever is running...............")
 });

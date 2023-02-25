@@ -17,8 +17,6 @@ const getallproducts = (request , response) => {
         })
     })
 }
-module.exports = getallproducts;
-
 // creating a id query on get.............
 
 const get_product_id = (request,response) =>{
@@ -43,4 +41,4 @@ const get_product_id = (request,response) =>{
     })
 };
 
-module.exports = {getallproducts,get_product_id};
+module.exports = {getallproducts,get_product_id}
